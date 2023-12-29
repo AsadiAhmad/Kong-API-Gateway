@@ -5,7 +5,8 @@ download Docker and install it on your system.
 ## Step 2: Kong
 ### Pull the Docker image
 
-'''docker pull kong/kong-gateway:2.7.0.0-alpine'''
+'''bash 
+docker pull kong/kong-gateway:2.7.0.0-alpine'''
 
 ### Step1: Create a Docker network
 
