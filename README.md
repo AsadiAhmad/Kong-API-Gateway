@@ -1,5 +1,5 @@
 # Kong-API-Gateway
- a simple project that shows hot to use kong API Gateway service.
+ a simple project that shows how to use kong API Gateway service.
 ## Step 1: Docker
 download Docker and install it on your system.
 ## Step 2: Kong
