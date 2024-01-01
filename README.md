@@ -69,7 +69,7 @@ When you type ```bash http://yourip:5000/``` into your browser's address bar and
 ## Step 5:Installing plugins
 In this section, we guide you through the installation and usage of ten distinct plugins in Kong, providing step-by-step instructions for each
 ### Step 5-1: IP restriction plugin
-### Step 5-2: IP restriction plugin
+### Step 5-2: Basic authentication plugin
 ### Step 5-3: IP restriction plugin
 ### Step 5-4: IP restriction plugin
 ### Step 5-5: IP restriction plugin
