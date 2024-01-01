@@ -97,6 +97,7 @@ set a username and password for your consumer then click on create button.
 Upon entering ```bash http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that you need Username and password for accessing to your service.
 ![Local Image](/images/Basic-authentication/7.JPG)
 Upon entering the accurate username and password, you will gain access to your service content.
+![Local Image](/images/Basic-authentication/8.JPG)
 ### Step 5-3: Request termination plugin
 ### Step 5-4: Proxy caching plugin
 ### Step 5-5: Response rate limiting plugin
