@@ -155,6 +155,7 @@ Please configure your plugin settings as shown in the image below.
 ![Local Image](/images/Rate-Limiter/6.JPG)
 
 When you enter ```bash http://yourip:8000/yourservicename``` in your browser's address bar and hit enter, attempting to exceed the rate limit will result in an error.
+
 ![Local Image](/images/Rate-Limiter/7.JPG)  
 
 ### Step 5-7: Bot detection plugin
