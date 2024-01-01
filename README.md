@@ -66,4 +66,15 @@ When you type ```bash http://yourip:5000/``` into your browser's address bar and
  ### Step4-1: Adding your consumer in Kong
  
  
- ## Step 5:Installing plugins
+## Step 5:Installing plugins
+In this section, we guide you through the installation and usage of ten distinct plugins in Kong, providing step-by-step instructions for each
+### Step 5-1: IP restriction plugin
+### Step 5-2: IP restriction plugin
+### Step 5-3: IP restriction plugin
+### Step 5-4: IP restriction plugin
+### Step 5-5: IP restriction plugin
+### Step 5-6: Rate limiting plugin
+### Step 5-7: Bot detection plugin
+### Step 5-8: Request size limitting plugin
+### Step 5-9: Key auth restriction plugin
+### Step 5-10: ACL plugin
