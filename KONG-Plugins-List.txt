@@ -1,9 +1,15 @@
 Kiarash
 1-IP restriction
+2-basic Auth
+3-request termination
+4-Proxy caching
+5-response rate limiting
+request transformer
+response transformer
 JWT
-basic Auth
-request termination
 file log
+http log
+
 
 Ahmad
 2-Rate limiting
