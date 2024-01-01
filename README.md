@@ -159,6 +159,19 @@ When you enter ``` http://yourip:8000/yourservicename``` in your browser's addre
 ![Local Image](/images/Rate-Limiter/8.JPG)  
 
 ### Step 5-7: Bot detection plugin
+In the first step you should go to Plugins section and enable Bot Detection plugin.
+
+![Local Image](/images/Bot-Detection/1.JPG)
+
+Please configure your plugin settings as shown in the image below.
+
+![Local Image](/images/Bot-Detection/2.JPG)
+![Local Image](/images/Bot-Detection/3.JPG)
+
+When an attempt is made to access our service through Google Chrome, the system promptly identifies the user as a bot. Consequently, upon opening Google Chrome and entering ```http://yourip:8000/yourservicename``` into the browser's address bar, an error message explicitly stating "Forbidden" is displayed. This proactive measure plays a crucial role in recognizing and restraining potential automated bot activities.
+
+![Local Image](/images/Bot-Detection/5.JPG)
+
 
 ### Step 5-8: Request size limitting plugin
 ### Step 5-9: Key auth restriction plugin
