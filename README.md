@@ -145,7 +145,20 @@ Please configure your plugin settings as shown in the image below.
 Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ```bash http://yourip:8000/yourservicename```.You'll notice that the headers now include ```x-ratelimit-limit-first-limit-seconds``` and```x-ratelimit-remaining-first-limit-seconds```.  
 ![Local Image](/images/Response-rate-limiting/9.JPG)
 ### Step 5-6: Rate limiting plugin
+In the first step you should go to Plugins section and enable Response Rate limiting plugin.
+![Local Image](/images/Rate-Limiter/1.JPG)  
+Please configure your plugin settings as shown in the image below.
+![Local Image](/images/Rate-Limiter/2.JPG)  
+![Local Image](/images/Rate-Limiter/3.JPG)  
+![Local Image](/images/Rate-Limiter/4.JPG)  
+![Local Image](/images/Rate-Limiter/5.JPG)
+![Local Image](/images/Rate-Limiter/6.JPG)
+
+When you enter ```bash http://yourip:8000/yourservicename``` in your browser's address bar and hit enter, attempting to exceed the rate limit will result in an error.
+![Local Image](/images/Rate-Limiter/7.JPG)  
+
 ### Step 5-7: Bot detection plugin
+
 ### Step 5-8: Request size limitting plugin
 ### Step 5-9: Key auth restriction plugin
 ### Step 5-10: ACL plugin
