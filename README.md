@@ -133,6 +133,17 @@ Now enable your proxy caching plugin from Kong manager.
 Upon sending another GET request, you'll notice that the headers now include ```bash x-cache-key``` and  ```x-cache-status``` .  
 ![Local Image](/images/Proxy-caching/9.JPG)
 ### Step 5-5: Response rate limiting plugin
+In the first step you should go to Plugins section and enable Response rate limiting plugin.
+![Local Image](/images/Response-rate-limiting/1.JPG)
+![Local Image](/images/Response-rate-limiting/2.JPG)  
+Please configure your plugin settings as shown in the image below.
+![Local Image](/images/Response-rate-limiting/3.JPG)
+![Local Image](/images/Response-rate-limiting/4.JPG)
+![Local Image](/images/Response-rate-limiting/5.JPG)
+![Local Image](/images/Response-rate-limiting/6.JPG)
+![Local Image](/images/Response-rate-limiting/7.JPG)
+Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ```bash http://yourip:8000/yourservicename```.You'll notice that the headers now include ```x-ratelimit-limit-first-limit-seconds``` and```x-ratelimit-remaining-first-limit-seconds```.  
+![Local Image](/images/Response-rate-limiting/9.JPG)
 ### Step 5-6: Rate limiting plugin
 ### Step 5-7: Bot detection plugin
 ### Step 5-8: Request size limitting plugin
