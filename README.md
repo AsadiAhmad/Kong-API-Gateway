@@ -69,16 +69,16 @@ When you type ```bash http://yourip:5000/``` into your browser's address bar and
 ## Step 5:Installing plugins
 In this section, we guide you through the installation and usage of ten distinct plugins in Kong, providing step-by-step instructions for each
 ### Step 5-1: IP restriction plugin
-in this step you should go to Plugins section and enable IP Restriction plugin.  
+in this step you should go to Plugins section and enable IP Restriction plugin.    
 ![Local Image](/images/IP-restriction/1.JPG)  
 
-Please configure your plugin settings as shown in the image below.
+Please configure your plugin settings as shown in the image below.  
 ![Local Image](/images/IP-restriction/2.JPG) 
 ![Local Image](/images/IP-restriction/3.JPG) 
 ![Local Image](/images/IP-restriction/4.JPG)
 *Adjust the settings according to your preferences.*  
 then click on install button.  
-Upon entering ```bash http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that access to the service is restricted for your IP.  
+Upon entering ```bash http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that access to the service is restricted for your IP.   
 ![Local Image](/images/IP-restriction/5.JPG)
 *your service page* 
 ### Step 5-2: Basic authentication plugin
