@@ -52,4 +52,5 @@ When you type ```bash http://yourip:5000/``` into your browser's address bar and
   
   
 ![Local Image](/images/IP-restriction/service-runnig.JPG)
+*your service is running on port 5000 on your local IP*
 ## Step 4:
