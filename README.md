@@ -53,4 +53,10 @@ When you type ```bash http://yourip:5000/``` into your browser's address bar and
   
 ![Local Image](/images/IP-restriction/service-runnig.JPG)
 *your service is running on port 5000 on your local IP*
-## Step 4:
+## Step 4:Installing plugins
+### Step4-1: Adding your service in Kong
+ type ```bash http://yourip:8002/``` into your browser's address bar and hit enter, you will see the Kong Manager OSS on your browser.  
+ click on Gateway Services on the menu.
+ add your service information and hit save buttom.  
+ 
+ #### image of creating service should be added 
