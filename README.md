@@ -48,14 +48,14 @@ if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0',port=5000)
 
 ```
-When you type ```bash http://yourip:5000/``` into your browser's address bar and hit enter, you will see that the service is running successfully.
+When you type ``` http://yourip:5000/``` into your browser's address bar and hit enter, you will see that the service is running successfully.
   
   
 ![Local Image](/images/IP-restriction/service-runnig.JPG)
 *your service is running on port 5000 on your local IP*
 ## Step 4: Primary settings
 ### Step4-1: Adding your service in Kong
- type ```bash http://yourip:8002/``` into your browser's address bar and hit enter, you will see the Kong Manager OSS on your browser.  
+ type ``` http://yourip:8002/``` into your browser's address bar and hit enter, you will see the Kong Manager OSS on your browser.  
  click on Gateway Services on the menu.
  add your service information and hit save button.  
  
@@ -78,7 +78,7 @@ Please configure your plugin settings as shown in the image below.
 ![Local Image](/images/IP-restriction/4.JPG)
 *Adjust the settings according to your preferences.*  
 then click on install button.  
-Upon entering ```bash http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that access to the service is restricted for your IP.   
+Upon entering ``` http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that access to the service is restricted for your IP.   
 ![Local Image](/images/IP-restriction/5.JPG)
 *your service page* 
 ### Step 5-2: Basic authentication plugin
@@ -90,11 +90,11 @@ Please configure your plugin settings as shown in the image below.
 then click on install button.  
 Once you've activated the plugin, proceed to create a new consumer (as previously explained).
 ![Local Image](/images/Basic-authentication/4.JPG)  
-Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ```bash New Basic Auth Credential```.
+Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ``` New Basic Auth Credential```.
 ![Local Image](/images/Basic-authentication/5.JPG)  
 set a username and password for your consumer then click on create button.
 ![Local Image](/images/Basic-authentication/6.JPG)  
-Upon entering ```bash http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that you need Username and password for accessing to your service.
+Upon entering ``` http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that you need Username and password for accessing to your service.
 ![Local Image](/images/Basic-authentication/7.JPG)
 Upon entering the accurate username and password, you will gain access to your service content.
 ![Local Image](/images/Basic-authentication/8.JPG)
@@ -108,7 +108,7 @@ Please configure your plugin settings as shown in the image below.
 ![Local Image](/images/Request-termination/6.JPG)
 ![Local Image](/images/Request-termination/7.JPG)
 then click on install button. 
-Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ```bash New Basic Auth Credential```.
+Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ``` New Basic Auth Credential```.
 ![Local Image](/images/Request-termination/8.JPG)
 ![Local Image](/images/Request-termination/9.JPG)
 set a username and password for your consumer then click on create button.
@@ -126,11 +126,11 @@ Please configure your plugin settings as shown in the image below.
 ![Local Image](/images/Proxy-caching/4.JPG)
 ![Local Image](/images/Proxy-caching/5.JPG)
 ![Local Image](/images/Proxy-caching/6.JPG)
-Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ```bash http://yourip:8000/yourservicename```. With the plugin disabled, you should observe that everything is functioning correctly, but there is no evidence of caching, as depicted in the image below.
+Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ``` http://yourip:8000/yourservicename```. With the plugin disabled, you should observe that everything is functioning correctly, but there is no evidence of caching, as depicted in the image below.
 ![Local Image](/images/Proxy-caching/7.JPG)
 Now enable your proxy caching plugin from Kong manager.
 ![Local Image](/images/Proxy-caching/7.JPG)
-Upon sending another GET request, you'll notice that the headers now include ```bash x-cache-key``` and  ```x-cache-status``` .  
+Upon sending another GET request, you'll notice that the headers now include ``` x-cache-key``` and  ```x-cache-status``` .  
 ![Local Image](/images/Proxy-caching/9.JPG)
 ### Step 5-5: Response rate limiting plugin
 In the first step you should go to Plugins section and enable Response rate limiting plugin.
@@ -142,7 +142,7 @@ Please configure your plugin settings as shown in the image below.
 ![Local Image](/images/Response-rate-limiting/5.JPG)
 ![Local Image](/images/Response-rate-limiting/6.JPG)
 ![Local Image](/images/Response-rate-limiting/7.JPG)
-Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ```bash http://yourip:8000/yourservicename```.You'll notice that the headers now include ```x-ratelimit-limit-first-limit-seconds``` and```x-ratelimit-remaining-first-limit-seconds```.  
+Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ``` http://yourip:8000/yourservicename```.You'll notice that the headers now include ```x-ratelimit-limit-first-limit-seconds``` and```x-ratelimit-remaining-first-limit-seconds```.  
 ![Local Image](/images/Response-rate-limiting/9.JPG)
 ### Step 5-6: Rate limiting plugin
 In the first step you should go to Plugins section and enable Response Rate limiting plugin.
@@ -154,7 +154,7 @@ Please configure your plugin settings as shown in the image below.
 ![Local Image](/images/Rate-Limiter/5.JPG)
 ![Local Image](/images/Rate-Limiter/6.JPG)
 
-When you enter ```bash http://yourip:8000/yourservicename``` in your browser's address bar and hit enter, attempting to exceed the rate limit will result in an error.
+When you enter ``` http://yourip:8000/yourservicename``` in your browser's address bar and hit enter, attempting to exceed the rate limit will result in an error.
 
 ![Local Image](/images/Rate-Limiter/8.JPG)  
 
