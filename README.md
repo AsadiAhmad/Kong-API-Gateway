@@ -99,6 +99,24 @@ Upon entering ```bash http://yourip:8000/yourservicename``` into your browser's 
 Upon entering the accurate username and password, you will gain access to your service content.
 ![Local Image](/images/Basic-authentication/8.JPG)
 ### Step 5-3: Request termination plugin
+Firstly, you should create your second consumer(as previously explained).
+then you should go to Plugins section and enable Request termination plugin. 
+![Local Image](/images/Request-termination/3.JPG) 
+![Local Image](/images/Request-termination/4.JPG)
+Please configure your plugin settings as shown in the image below.
+![Local Image](/images/Request-termination/5.JPG)
+![Local Image](/images/Request-termination/6.JPG)
+![Local Image](/images/Request-termination/7.JPG)
+then click on install button. 
+Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ```bash New Basic Auth Credential```.
+![Local Image](/images/Request-termination/8.JPG)
+![Local Image](/images/Request-termination/9.JPG)
+set a username and password for your consumer then click on create button.
+![Local Image](/images/Request-termination/10.JPG)
+When you correctly input your username and password, you'll sign in. However, a message will be displayed, indicating that your request has been terminated.
+![Local Image](/images/Request-termination/11.JPG)
+![Local Image](/images/Request-termination/12.JPG)
+
 ### Step 5-4: Proxy caching plugin
 ### Step 5-5: Response rate limiting plugin
 ### Step 5-6: Rate limiting plugin
