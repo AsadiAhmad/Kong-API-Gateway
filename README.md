@@ -71,8 +71,8 @@ In this section, we guide you through the installation and usage of ten distinct
 ### Step 5-1: IP restriction plugin
 ### Step 5-2: Basic authentication plugin
 ### Step 5-3: Request termination plugin
-### Step 5-4: IP restriction plugin
-### Step 5-5: IP restriction plugin
+### Step 5-4: Proxy caching plugin
+### Step 5-5: Response rate limiting plugin
 ### Step 5-6: Rate limiting plugin
 ### Step 5-7: Bot detection plugin
 ### Step 5-8: Request size limitting plugin
