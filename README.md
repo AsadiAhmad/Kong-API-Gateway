@@ -173,6 +173,24 @@ When an attempt is made to access our service through Google Chrome, the system 
 ![Local Image](/images/Bot-Detection/5.JPG)
 
 
-### Step 5-8: Request size limitting plugin
+### Step 5-8: Request size limiting plugin
+In the first step you should go to Plugins section and enable Request size limiting plugin.
+
+![Local Image](/images/Request-Size-Limiting/1.JPG)
+
+Please configure your plugin settings as shown in the image below.
+
+![Local Image](/images/Request-Size-Limiting/2.JPG)
+![Local Image](/images/Request-Size-Limiting/3.JPG)
+
+Use Thunder Client, Postman, or your preferred service to send a GET request to ```http://yourip:8000/yourservicename```, ensuring that it remains within the size-limiting restrictions. Upon doing so, you will receive a standard response.
+
+![Local Image](/images/Request-Size-Limiting/4.JPG)
+
+Conversely, if you surpass the size-limiting restrictions in your request, the response will notify you that your request exceeds the size-limiting range.
+
+![Local Image](/images/Request-Size-Limiting/5.JPG)
+
+
 ### Step 5-9: Key auth restriction plugin
 ### Step 5-10: ACL plugin
