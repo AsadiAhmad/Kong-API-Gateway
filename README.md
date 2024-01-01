@@ -118,6 +118,20 @@ When you correctly input your username and password, you'll sign in. However, a 
 ![Local Image](/images/Request-termination/12.JPG)
 
 ### Step 5-4: Proxy caching plugin
+In the first step you should go to Plugins section and enable Proxy caching plugin.
+![Local Image](/images/Proxy-caching/1.JPG)
+![Local Image](/images/Proxy-caching/2.JPG)
+Please configure your plugin settings as shown in the image below.  
+![Local Image](/images/Proxy-caching/3.JPG)
+![Local Image](/images/Proxy-caching/4.JPG)
+![Local Image](/images/Proxy-caching/5.JPG)
+![Local Image](/images/Proxy-caching/6.JPG)
+Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ```bash http://yourip:8000/yourservicename```. With the plugin disabled, you should observe that everything is functioning correctly, but there is no evidence of caching, as depicted in the image below.
+![Local Image](/images/Proxy-caching/7.JPG)
+Now enable your proxy caching plugin from Kong manager.
+![Local Image](/images/Proxy-caching/7.JPG)
+Upon sending another GET request, you'll notice that the headers now include ```bash x-cache-key``` and  ```x-cache-status``` .  
+![Local Image](/images/Proxy-caching/9.JPG)
 ### Step 5-5: Response rate limiting plugin
 ### Step 5-6: Rate limiting plugin
 ### Step 5-7: Bot detection plugin
