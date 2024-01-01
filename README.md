@@ -69,6 +69,9 @@ When you type ```bash http://yourip:5000/``` into your browser's address bar and
 ## Step 5:Installing plugins
 In this section, we guide you through the installation and usage of ten distinct plugins in Kong, providing step-by-step instructions for each
 ### Step 5-1: IP restriction plugin
+in this step you should go to Plugins section and enable IP Restriction plugin.  
+![Local Image](/images/IP-restriction/1.JPG)  
+After 
 ### Step 5-2: Basic authentication plugin
 ### Step 5-3: Request termination plugin
 ### Step 5-4: Proxy caching plugin
