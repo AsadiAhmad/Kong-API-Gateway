@@ -57,7 +57,7 @@ When you type ```bash http://yourip:5000/``` into your browser's address bar and
 ### Step4-1: Adding your service in Kong
  type ```bash http://yourip:8002/``` into your browser's address bar and hit enter, you will see the Kong Manager OSS on your browser.  
  click on Gateway Services on the menu.
- add your service information and hit save buttom.  
+ add your service information and hit save button.  
  
  #### image of creating service should be added 
  
@@ -82,6 +82,21 @@ Upon entering ```bash http://yourip:8000/yourservicename``` into your browser's 
 ![Local Image](/images/IP-restriction/5.JPG)
 *your service page* 
 ### Step 5-2: Basic authentication plugin
+in this step you should go to Plugins section and enable Basic Authentication plugin.
+![Local Image](/images/Basic-authentication/1.JPG)  
+Please configure your plugin settings as shown in the image below.  
+![Local Image](/images/Basic-authentication/2.JPG) 
+![Local Image](/images/Basic-authentication/3.JPG)  
+then click on install button.  
+Once you've activated the plugin, proceed to create a new consumer (as previously explained).
+![Local Image](/images/Basic-authentication/4.JPG)  
+Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ```bash New Basic Auth Credential```.
+![Local Image](/images/Basic-authentication/5.JPG)  
+set a username and password for your consumer then click on create button.
+![Local Image](/images/Basic-authentication/6.JPG)  
+Upon entering ```bash http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that you need Username and password for accessing to your service.
+![Local Image](/images/Basic-authentication/7.JPG)
+Upon entering the accurate username and password, you will gain access to your service content.
 ### Step 5-3: Request termination plugin
 ### Step 5-4: Proxy caching plugin
 ### Step 5-5: Response rate limiting plugin
