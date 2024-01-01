@@ -49,6 +49,5 @@ if __name__ == '__main__':
 
 ```
 When you type ```bash http://yourip:5000/``` into your browser's address bar and hit enter, you will see that the service is running successfully.
-![Uploading service runnig status.JPG…]()
-
+![Local Image](\images\IP-Restriction\service-runnig.jpg)
 ## Step 4:
