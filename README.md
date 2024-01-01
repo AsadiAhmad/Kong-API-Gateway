@@ -48,6 +48,7 @@ if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0',port=5000)
 
 ```
-When you type ```bash http://yourip:5000/``` into your browser's address bar and hit enter, you will see that the service is running successfully.  
+When you type ```bash http://yourip:5000/``` into your browser's address bar and hit enter, you will see that the service is running successfully.
+<br>
 ![Local Image](/images/IP-restriction/service-runnig.JPG)
 ## Step 4:
