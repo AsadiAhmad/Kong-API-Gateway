@@ -100,8 +100,8 @@ Upon entering the accurate username and password, you will gain access to your s
 ![Local Image](/images/Basic-authentication/8.JPG)
 ### Step 5-3: Request termination plugin
 Firstly, you should create your second consumer(as previously explained).
-then you should go to Plugins section and enable Request termination plugin. 
-![Local Image](/images/Request-termination/3.JPG) 
+then you should go to Plugins section and enable Request termination plugin.  
+![Local Image](/images/Request-termination/3-basic auth should be enabled.JPG) 
 ![Local Image](/images/Request-termination/4.JPG)
 Please configure your plugin settings as shown in the image below.
 ![Local Image](/images/Request-termination/5.JPG)
