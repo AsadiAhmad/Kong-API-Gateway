@@ -78,7 +78,9 @@ Please configure your plugin settings as shown in the image below.
 
 ![Local Image](/images/IP-restriction/2.JPG)
 
+
 ![Local Image](/images/IP-restriction/3.JPG)
+
 
 ![Local Image](/images/IP-restriction/4.JPG)
 *Adjust the settings according to your preferences.*  
@@ -96,6 +98,7 @@ in this step you should go to Plugins section and enable Basic Authentication pl
 Please configure your plugin settings as shown in the image below.  
 
 ![Local Image](/images/Basic-authentication/2.JPG)
+
 
 ![Local Image](/images/Basic-authentication/3.JPG)
 
@@ -126,13 +129,16 @@ then you should go to Plugins section and enable Request termination plugin.
 
 ![Local Image](/images/Request-termination/3.JPG)
 
+
 ![Local Image](/images/Request-termination/4.JPG)
 
 Please configure your plugin settings as shown in the image below.
 
 ![Local Image](/images/Request-termination/5.JPG)
 
+
 ![Local Image](/images/Request-termination/6.JPG)
+
 
 ![Local Image](/images/Request-termination/7.JPG)
 
@@ -140,6 +146,7 @@ then click on install button.
 Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ``` New Basic Auth Credential```.
 
 ![Local Image](/images/Request-termination/8.JPG)
+
 
 ![Local Image](/images/Request-termination/9.JPG)
 
@@ -151,6 +158,7 @@ When you correctly input your username and password, you'll sign in. However, a 
 
 ![Local Image](/images/Request-termination/11.JPG)
 
+
 ![Local Image](/images/Request-termination/12.JPG)
 
 ### Step 5-4: Proxy caching plugin
@@ -158,15 +166,19 @@ In the first step you should go to Plugins section and enable Proxy caching plug
 
 ![Local Image](/images/Proxy-caching/1.JPG)
 
+
 ![Local Image](/images/Proxy-caching/2.JPG)
 
 Please configure your plugin settings as shown in the image below.  
 
 ![Local Image](/images/Proxy-caching/3.JPG)
 
+
 ![Local Image](/images/Proxy-caching/4.JPG)
 
+
 ![Local Image](/images/Proxy-caching/5.JPG)
+
 
 ![Local Image](/images/Proxy-caching/6.JPG)
 
@@ -187,31 +199,47 @@ In the first step you should go to Plugins section and enable Response rate limi
 
 ![Local Image](/images/Response-rate-limiting/1.JPG)
 
+
 ![Local Image](/images/Response-rate-limiting/2.JPG)
 
 Please configure your plugin settings as shown in the image below.
 
 ![Local Image](/images/Response-rate-limiting/3.JPG)
 
+
 ![Local Image](/images/Response-rate-limiting/4.JPG)
+
 
 ![Local Image](/images/Response-rate-limiting/5.JPG)
 
+
 ![Local Image](/images/Response-rate-limiting/6.JPG)
+
 
 ![Local Image](/images/Response-rate-limiting/7.JPG)
 
 Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ``` http://yourip:8000/yourservicename```.You'll notice that the headers now include ```x-ratelimit-limit-first-limit-seconds``` and```x-ratelimit-remaining-first-limit-seconds```. 
 
 ![Local Image](/images/Response-rate-limiting/9.JPG)
+
 ### Step 5-6: Rate limiting plugin
 In the first step you should go to Plugins section and enable Response Rate limiting plugin.
-![Local Image](/images/Rate-Limiter/1.JPG)  
+
+![Local Image](/images/Rate-Limiter/1.JPG) 
+
 Please configure your plugin settings as shown in the image below.
-![Local Image](/images/Rate-Limiter/2.JPG)  
-![Local Image](/images/Rate-Limiter/3.JPG)  
-![Local Image](/images/Rate-Limiter/4.JPG)  
+![Local Image](/images/Rate-Limiter/2.JPG) 
+
+
+![Local Image](/images/Rate-Limiter/3.JPG) 
+
+
+![Local Image](/images/Rate-Limiter/4.JPG) 
+
+
 ![Local Image](/images/Rate-Limiter/5.JPG)
+
+
 ![Local Image](/images/Rate-Limiter/6.JPG)
 
 When you enter ``` http://yourip:8000/yourservicename``` in your browser's address bar and hit enter, attempting to exceed the rate limit will result in an error.
@@ -226,6 +254,7 @@ In the first step you should go to Plugins section and enable Bot Detection plug
 Please configure your plugin settings as shown in the image below.
 
 ![Local Image](/images/Bot-Detection/2.JPG)
+
 
 ![Local Image](/images/Bot-Detection/3.JPG)
 
@@ -242,6 +271,8 @@ In the first step you should go to Plugins section and enable Request size limit
 Please configure your plugin settings as shown in the image below.
 
 ![Local Image](/images/Request-Size-Limiting/2.JPG)
+
+
 ![Local Image](/images/Request-Size-Limiting/3.JPG)
 
 Use Thunder Client, Postman, or your preferred service to send a GET request to ```http://yourip:8000/yourservicename```, ensuring that it remains within the size-limiting restrictions. Upon doing so, you will receive a standard response.
