@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+
+<body>
 # Kong-API-Gateway
  a simple project that shows how to use kong API Gateway service.
 ## Step 1: Docker
@@ -286,3 +290,6 @@ Conversely, if you surpass the size-limiting restrictions in your request, the r
 
 ### Step 5-9: Key auth restriction plugin
 ### Step 5-10: ACL plugin
+
+</body>
+</html>
