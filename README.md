@@ -2,7 +2,7 @@
 <html>
 
 <body>
-
+<img>
 # Kong-API-Gateway
  a simple project that shows how to use kong API Gateway service.
 ## Step 1: Docker
@@ -290,6 +290,26 @@ Conversely, if you surpass the size-limiting restrictions in your request, the r
 
 
 ### Step 5-9: Key auth restriction plugin
+
+In the first step you should go to Plugins section and enable Request size limiting plugin.
+
+![Local Image](/images/Key-Auth/1.JPG)
+
+Please configure your plugin settings as shown in the image below.
+
+![Local Image](/images/Key-Auth/2.JPG)
+
+![Local Image](/images/Key-Auth/3.JPG)
+
+Use Thunder Client, Postman, or your preferred service to send a GET request to ```http://yourip:8000/yourservicename```. If an incorrect API key is used, as illustrated in the image below, a 401 Unauthorized error will be returned, indicating that the provided credentials are invalid and access to the requested resource is not permitted.
+
+![Local Image](/images/Key-Auth/4-5.JPG)
+
+If a valid API key is utilized in the request, as demonstrated in the image below, a successful authentication will result in a 200 status code. In this case, the Authorization header of the response will contain your authentication information, confirming authorized access to the requested resource.
+
+![Local Image](/images/Key-Auth/5.JPG)
+
+
 ### Step 5-10: ACL plugin
 
 </body>
