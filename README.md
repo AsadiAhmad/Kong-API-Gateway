@@ -52,6 +52,7 @@ When you type ``` http://yourip:5000/``` into your browser's address bar and hit
   
   
 ![Local Image](/images/IP-restriction/service-runnig.JPG)
+
 *your service is running on port 5000 on your local IP*
 ## Step 4: Primary settings
 ### Step4-1: Adding your service in Kong
@@ -69,80 +70,139 @@ When you type ``` http://yourip:5000/``` into your browser's address bar and hit
 ## Step 5:Installing plugins
 In this section, we guide you through the installation and usage of ten distinct plugins in Kong, providing step-by-step instructions for each
 ### Step 5-1: IP restriction plugin
-in this step you should go to Plugins section and enable IP Restriction plugin.    
+in this step you should go to Plugins section and enable IP Restriction plugin.
+
 ![Local Image](/images/IP-restriction/1.JPG)  
 
 Please configure your plugin settings as shown in the image below.  
-![Local Image](/images/IP-restriction/2.JPG) 
-![Local Image](/images/IP-restriction/3.JPG) 
+
+![Local Image](/images/IP-restriction/2.JPG)
+
+![Local Image](/images/IP-restriction/3.JPG)
+
 ![Local Image](/images/IP-restriction/4.JPG)
 *Adjust the settings according to your preferences.*  
 then click on install button.  
-Upon entering ``` http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that access to the service is restricted for your IP.   
+Upon entering ``` http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that access to the service is restricted for your IP. 
+
 ![Local Image](/images/IP-restriction/5.JPG)
+
 *your service page* 
 ### Step 5-2: Basic authentication plugin
 in this step you should go to Plugins section and enable Basic Authentication plugin.
-![Local Image](/images/Basic-authentication/1.JPG)  
+
+![Local Image](/images/Basic-authentication/1.JPG) 
+
 Please configure your plugin settings as shown in the image below.  
-![Local Image](/images/Basic-authentication/2.JPG) 
-![Local Image](/images/Basic-authentication/3.JPG)  
+
+![Local Image](/images/Basic-authentication/2.JPG)
+
+![Local Image](/images/Basic-authentication/3.JPG)
+
 then click on install button.  
 Once you've activated the plugin, proceed to create a new consumer (as previously explained).
-![Local Image](/images/Basic-authentication/4.JPG)  
+
+![Local Image](/images/Basic-authentication/4.JPG) 
+
 Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ``` New Basic Auth Credential```.
+
 ![Local Image](/images/Basic-authentication/5.JPG)  
+
 set a username and password for your consumer then click on create button.
-![Local Image](/images/Basic-authentication/6.JPG)  
+
+![Local Image](/images/Basic-authentication/6.JPG)
+
 Upon entering ``` http://yourip:8000/yourservicename``` into your browser's address bar and pressing enter, you will observe that you need Username and password for accessing to your service.
+
 ![Local Image](/images/Basic-authentication/7.JPG)
+
 Upon entering the accurate username and password, you will gain access to your service content.
+
 ![Local Image](/images/Basic-authentication/8.JPG)
+
 ### Step 5-3: Request termination plugin
 Firstly, you should create your second consumer(as previously explained).
-then you should go to Plugins section and enable Request termination plugin.  
-![Local Image](/images/Request-termination/3.JPG) 
+then you should go to Plugins section and enable Request termination plugin. 
+
+![Local Image](/images/Request-termination/3.JPG)
+
 ![Local Image](/images/Request-termination/4.JPG)
+
 Please configure your plugin settings as shown in the image below.
+
 ![Local Image](/images/Request-termination/5.JPG)
+
 ![Local Image](/images/Request-termination/6.JPG)
+
 ![Local Image](/images/Request-termination/7.JPG)
+
 then click on install button. 
 Subsequently, click on your designated consumer and navigate to the credentials section. You will notice the addition of the Basic Authentication section for your consumer. Click on ``` New Basic Auth Credential```.
+
 ![Local Image](/images/Request-termination/8.JPG)
+
 ![Local Image](/images/Request-termination/9.JPG)
+
 set a username and password for your consumer then click on create button.
+
 ![Local Image](/images/Request-termination/10.JPG)
+
 When you correctly input your username and password, you'll sign in. However, a message will be displayed, indicating that your request has been terminated.
+
 ![Local Image](/images/Request-termination/11.JPG)
+
 ![Local Image](/images/Request-termination/12.JPG)
 
 ### Step 5-4: Proxy caching plugin
 In the first step you should go to Plugins section and enable Proxy caching plugin.
+
 ![Local Image](/images/Proxy-caching/1.JPG)
+
 ![Local Image](/images/Proxy-caching/2.JPG)
+
 Please configure your plugin settings as shown in the image below.  
+
 ![Local Image](/images/Proxy-caching/3.JPG)
+
 ![Local Image](/images/Proxy-caching/4.JPG)
+
 ![Local Image](/images/Proxy-caching/5.JPG)
+
 ![Local Image](/images/Proxy-caching/6.JPG)
+
 Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ``` http://yourip:8000/yourservicename```. With the plugin disabled, you should observe that everything is functioning correctly, but there is no evidence of caching, as depicted in the image below.
+
 ![Local Image](/images/Proxy-caching/7.JPG)
+
 Now enable your proxy caching plugin from Kong manager.
+
 ![Local Image](/images/Proxy-caching/7.JPG)
+
 Upon sending another GET request, you'll notice that the headers now include ``` x-cache-key``` and  ```x-cache-status``` .  
+
 ![Local Image](/images/Proxy-caching/9.JPG)
+
 ### Step 5-5: Response rate limiting plugin
 In the first step you should go to Plugins section and enable Response rate limiting plugin.
+
 ![Local Image](/images/Response-rate-limiting/1.JPG)
-![Local Image](/images/Response-rate-limiting/2.JPG)  
+
+![Local Image](/images/Response-rate-limiting/2.JPG)
+
 Please configure your plugin settings as shown in the image below.
+
 ![Local Image](/images/Response-rate-limiting/3.JPG)
+
 ![Local Image](/images/Response-rate-limiting/4.JPG)
+
 ![Local Image](/images/Response-rate-limiting/5.JPG)
+
 ![Local Image](/images/Response-rate-limiting/6.JPG)
+
 ![Local Image](/images/Response-rate-limiting/7.JPG)
-Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ``` http://yourip:8000/yourservicename```.You'll notice that the headers now include ```x-ratelimit-limit-first-limit-seconds``` and```x-ratelimit-remaining-first-limit-seconds```.  
+
+Now, using Thunder Client, or any other preferred service such as Postman, send a GET request to ``` http://yourip:8000/yourservicename```.You'll notice that the headers now include ```x-ratelimit-limit-first-limit-seconds``` and```x-ratelimit-remaining-first-limit-seconds```. 
+
 ![Local Image](/images/Response-rate-limiting/9.JPG)
 ### Step 5-6: Rate limiting plugin
 In the first step you should go to Plugins section and enable Response Rate limiting plugin.
@@ -166,6 +226,7 @@ In the first step you should go to Plugins section and enable Bot Detection plug
 Please configure your plugin settings as shown in the image below.
 
 ![Local Image](/images/Bot-Detection/2.JPG)
+
 ![Local Image](/images/Bot-Detection/3.JPG)
 
 When an attempt is made to access our service through Google Chrome, the system promptly identifies the user as a bot. Consequently, upon opening Google Chrome and entering ```http://yourip:8000/yourservicename``` into the browser's address bar, an error message explicitly stating "Forbidden" is displayed. This proactive measure plays a crucial role in recognizing and restraining potential automated bot activities.
