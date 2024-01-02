@@ -312,5 +312,50 @@ If a valid API key is utilized in the request, as demonstrated in the image belo
 
 ### Step 5-10: ACL plugin
 
+In the first step you should go to Plugins section and enable Request size limiting plugin.
+
+![Local Image](/images/ACL/1.JPG)
+
+Please configure your plugin settings as shown in the image below.
+
+![Local Image](/images/ACL/2.JPG)
+
+![Local Image](/images/ACL/3.JPG)
+
+After configuring your settings, follow the outlined steps to create two consumers, as previously explained.
+
+![Local Image](/images/ACL/4.JPG)
+
+Alternatively, if you already have two consumers, navigate to the 'Consumers' section in your Kong panel. Then, proceed to the 'Credentials' section, where you can add ACL credentials for both consumers.
+
+![Local Image](/images/ACL/5.JPG)
+
+![Local Image](/images/ACL/6.JPG)
+
+now ensure that the Basic Authentication plugin is enabled in your configuration.
+
+![Local Image](/images/ACL/7.JPG)
+
+Consequently, upon opening your browser and entering ```http://yourip:8000/yourservicename``` into the browser's address bar.After signing into your service, refer to the provided image below to observe that the admin consumer is granted access to the service.
+
+![Local Image](/images/ACL/8.JPG)
+
+![Local Image](/images/ACL/9.JPG)
+
+whereas the bot consumer is restricted from accessing it.
+
+![Local Image](/images/ACL/10.JPG)
+
+![Local Image](/images/ACL/11.JPG)
+
+# Collaborators
+This project represents a collaborative effort between Kiarash Rahmani and Ahmad Asadi. Working in tandem, we dedicated our efforts to developing a comprehensive and robust repository, designed to guide users in optimizing their experience with the Kong API gateway service.
+
+- [Kiarash Rahmani](https://github.com/kiarashrahmani)
+- [Ahmad Asadi](https://github.com/BlackAssassinCoder)
+
+# License
+This project is licensed under the MIT License.
+
 </body>
 </html>
